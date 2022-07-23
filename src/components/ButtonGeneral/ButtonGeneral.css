@@ -1,0 +1,14 @@
+.button-general {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.button-general a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+}
