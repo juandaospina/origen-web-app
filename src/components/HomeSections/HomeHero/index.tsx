@@ -18,7 +18,7 @@ export const HomeHero = () => {
 
                 <div>
                     <ButtonGeneral
-                        text="Quiero ser parte 🚀"
+                        text="Quiero ser parte  🤍"
                         route="/signup"
                         background="#00ffcb"
                         border="#00ffcb"

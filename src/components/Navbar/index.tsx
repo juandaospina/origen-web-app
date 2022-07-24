@@ -18,7 +18,9 @@ export const Navbar = () => {
             <header className="navbar">
                 <div className="navigation-container">
                     <div className="logotipe-container">
-                        <img src={ logo } alt="origen logotipe" />
+                        <a href="/">
+                            <img src={ logo } alt="origen logotipe" />
+                        </a>
                         <span> | Economía circular </span>
                     </div>
 

@@ -1,0 +1,53 @@
+.allies-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+.title {
+    min-width: 5rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.allies-wrapper {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1rem;
+}
+
+.allies {
+    width: 20rem;
+    height: 10rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allies img {
+    width: 10rem;
+    height: 10rem;
+
+}
+
+@media (min-width: 768px) {
+    .allies-container {
+        width: 100%;
+    }
+
+    .allies-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .card  {
+        height: 15rem;
+    }
+}

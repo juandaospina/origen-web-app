@@ -1,6 +1,12 @@
 .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     width: 100%;
-    height: 5rem;
+    height: 6rem;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 rgb(99 99 99 / 20%);
 }
 
 .navigation-container {
@@ -8,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    margin: 0 auto;
+    height: 100%;
 }
 
 .logotipe-container {
@@ -55,11 +61,17 @@
 
 @media (max-width: 748px ) {
 
+    .navbar {
+        height: 5rem;
+    }
+
     .navigation-container {
+        position: static;
         display: flex;
         flex-direction: row-reverse;
         padding: 1rem;
         box-shadow: 0 2px 8px 0 rgb(99 99 99 / 20%);
+        /* border: 1px solid red; */
     }
 
     .nav-left ul {

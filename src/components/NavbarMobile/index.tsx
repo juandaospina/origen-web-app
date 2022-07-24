@@ -18,7 +18,7 @@ export const NavbarMobile = () => {
                         <ul>
                             <li>
                                 <img src={ IconHome } alt="Home" />
-                                <a href="">Home</a>
+                                <a href="/">Home</a>
                             </li>
 
                             <li>
@@ -38,7 +38,7 @@ export const NavbarMobile = () => {
                             
                             <li>
                                 <img src={ IconUser } alt="User" />
-                                <a href="">Ingresar</a>
+                                <a href="/login">Ingresar</a>
                             </li>
 
                             <li>
