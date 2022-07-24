@@ -1,14 +1,27 @@
-import { Shorcut } from "../components/Shorcut"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from "../containers/Layout"
+
+import { Home, Login } from '../pages';
+
 
 export const OrigenApp = () => {
 
   return (
-    <div className="App">
+    <BrowserRouter>
       <Layout>
-        <Shorcut />
+        <Routes>
+          <Route
+            path='/'
+            element = { <Home /> }
+          />
+
+          <Route
+            path='/login'
+            element = { <Login />}
+          />
+        </Routes>
       </Layout>
-    </div>
+    </BrowserRouter>
   )
 }
 

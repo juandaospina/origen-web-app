@@ -1,12 +1,12 @@
 .menu-mobile__container {
     width: 13rem;
-    height: 20rem;
+    height: 22rem;
     margin-left: 0.5rem;
     padding: 1rem;
     border-bottom-left-radius: 0.8rem;  
     border-bottom-right-radius: 0.8rem;
     background: rgba(255 , 255, 255, 0.30);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(100px);
     box-shadow: 0 2px 8px 0 rgb(99 99 99 / 20%);
 }
 
@@ -33,7 +33,7 @@
 .navigation-mobile a {
     text-decoration: none;
     font-weight: 500;
-    color: #CACFD2;
+    color: #636F74;
 }
 
 .navigation-mobile li:nth-child(7) a {

@@ -15,7 +15,7 @@ export const Navbar = () => {
 
     return(
         <>
-            <div className="navbar">
+            <header className="navbar">
                 <div className="navigation-container">
                     <div className="logotipe-container">
                         <img src={ logo } alt="origen logotipe" />
@@ -28,7 +28,7 @@ export const Navbar = () => {
                     <nav className="nav-right">
                         <ul>
                             <li>
-                                <a href="">Cómo funciona</a>
+                                <a href="">Nosotros</a>
                             </li>
 
                             <li>
@@ -71,7 +71,7 @@ export const Navbar = () => {
                 </div>
 
                 { toggleMobile && <NavbarMobile /> }
-            </div>
+            </header>
         </>
     );
 }

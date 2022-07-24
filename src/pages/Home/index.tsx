@@ -1,9 +1,9 @@
-import { Banner } from "../../components/Banner";
+import { HomeHero } from "../../components/HomeSections/HomeHero";
 
 export const Home = () => {
     return(
         <>
-            <Banner /> 
+            <HomeHero /> 
         </>
     );
 }
