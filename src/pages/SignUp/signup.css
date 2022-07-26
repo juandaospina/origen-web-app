@@ -1,0 +1,80 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 2rem;
+    /* border: 1px solid orangered; */
+}
+
+.form-container {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+.security-img {
+    display: flex;
+    justify-content: center;
+}
+
+.security-img img {
+    width: 15rem;
+    height: 12rem;
+}
+
+.login-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.login-title p {
+    font-size: 0.8rem;
+    margin: 0.6rem 0 0 1rem;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inputs label {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-inputs input {
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid #CACFD2;
+    border-radius: 0.3rem;
+    outline: none;
+    padding: 0.6rem;
+}
+
+.forward-password {
+    margin-top: 1rem;
+}
+.forward-password a {
+    text-decoration: none;
+    color: #000;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.button-container button {
+    width: 100%;
+    height: 3rem;
+    color: #fff;
+    margin-top: 2rem;
+    border: none;
+    background-color: #00ffcb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+}

@@ -43,7 +43,7 @@ export const NavbarMobile = () => {
 
                             <li>
                                 <img src={ IconSignUp } alt="Sign Up" />
-                                <a href="">Registrarme</a>
+                                <a href="/create-account">Registrarme</a>
                             </li>
 
                             <li>
