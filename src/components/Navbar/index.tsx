@@ -1,13 +1,17 @@
+import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import { ButtonGeneral } from '../ButtonGeneral';
 import IconMenu from '../../assets/icons/menu-hamburguesa.svg'
 import logo from '../../assets/img/origen-logotipe.png'
 import './navbar.css'
-import { useState } from 'react';
 import { NavbarMobile } from '../NavbarMobile';
 
 export const Navbar = () => {
 
     const [ toggleMobile, setToggleMobile ] = useState(false);
+    const { pathname } = useLocation();
+    const location = pathname === '/account' ? "none" : undefined
 
     const handleMenuMobile = () => {
         setToggleMobile(!toggleMobile);

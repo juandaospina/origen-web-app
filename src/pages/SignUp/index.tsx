@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
 import ImgSecurity from '../../assets/img/security.png';
 import { useAuth } from '../../context/authContext';
@@ -6,7 +8,9 @@ import './signup.css';
 
 export const CreateAccount = () => {
 
+    const [ errorAuth, setErrorAuth ] = useState('');
     const { signup } = useAuth();
+    const navigate = useNavigate()
     
     const { 
         register,
@@ -14,9 +18,17 @@ export const CreateAccount = () => {
         formState: { errors }
     } = useForm();
 
-    const onSubmit = (data: any) => {
+    const onSubmit = async (data: any) => {
         // console.log(data);
-        signup( data.email, data.password );
+        try {
+            // función debe ser asíncrona
+            // manejar los estados de error con (error.code)
+            await signup( data.email, data.password );
+            navigate('/account')
+        } catch (error) {
+            console.log(error)
+            setErrorAuth("Error de autenticación")
+        }
     }
 
     return(
@@ -77,6 +89,8 @@ export const CreateAccount = () => {
                             Crear cuenta
                         </button>
                     </div>
+
+                    { errorAuth && <p>{ errorAuth }</p> }
                 
                 </form>
             </div>

@@ -18,8 +18,8 @@ export const HomeHero = () => {
 
                 <div>
                     <ButtonGeneral
-                        text="Quiero ser parte  🤍"
-                        route="/signup"
+                        text="Solicitar recogida "
+                        route="/recoleccion"
                         background="#00ffcb"
                         border="#00ffcb"
                         textColor="#FFFFFF"

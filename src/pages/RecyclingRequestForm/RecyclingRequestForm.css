@@ -1,0 +1,102 @@
+.container-recycling {
+    margin-top: 6rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.wrapper h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.request-form {
+    padding: 0.6rem 0 0.8rem 0;
+    border-radius: 0.6rem;
+    background-color: #F2F4F9;
+}
+
+.formItem {
+    width: 18rem;
+    min-height: 8rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    background-color: #FFFFFF;
+    margin-top: 0.8rem;
+}
+
+.formItem h4 {
+    margin-bottom: 0.5rem;
+}
+
+.form {
+  position: relative;
+  display: flex;
+}
+
+.form input {
+    width: 30rem;
+    height: 3rem; 
+    padding: 1rem;
+    border: 1px solid #e1e5ee;
+    border-radius: 0.4rem;
+    color: black;
+    outline: none;
+    background: none;  
+}
+
+.wrapper-btn {
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+}
+
+.btn-request {
+    width: 10rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    height: 3rem;
+    background-color: #00FFCB;
+    color: #FFF;
+    font-family: 'Poppins';
+    margin: 1rem auto 0 auto;
+}
+
+.form__error {
+    color: red;
+    font-size: 1rem!important;
+    font-weight: 300!important;
+    padding-top: 0.8rem;
+}
+
+.react-tel-input .form-control {
+    width: 255px;
+    height: 3rem;
+    border: 1px solid #e1e5ee;
+}
+
+.InputText_formItem__oTK5R div {
+    margin-bottom: 0;
+}  
+
+.recycling-img img{
+    display: none;
+}
+
+@media (min-width: 648px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 2rem;
+    }
+    .recycling-img img{
+        width: 25rem;
+        height: 25rem;
+    }
+}

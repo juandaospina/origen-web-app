@@ -30,7 +30,7 @@
 
 .nav-right {
     display: flex;
-    width: 45rem;
+    width: 42rem;
     justify-content: space-between;
     align-items: center;
     margin-right: 3.5rem;
@@ -41,13 +41,13 @@
     gap: 2rem;
     align-items: center;
     list-style: none;
-    margin-right: 2rem;
 }
 
 .nav-right a {
     text-decoration: none;
     color: black;
     font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .nav-right div {

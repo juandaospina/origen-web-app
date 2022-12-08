@@ -1,7 +1,7 @@
 .button-general {
-    width: 12rem;
+    min-width: 10rem;
     height: 3rem;
-    border-radius: 0.6rem;
+    border-radius: 1.5rem;
     cursor: pointer;
 }
 

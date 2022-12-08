@@ -12,9 +12,13 @@
 
 .container-text {
     display: flex;
+    width: 95%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 5px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .informative-title p {
@@ -25,20 +29,18 @@
 }
 
 .informative-title div:nth-child(2) {
-    margin-top: 1rem;
     display: flex;
-    justify-content: center;
+    margin: 1rem auto 0 auto;
 }
 
 .img-section {
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
 }
 
 .img-section img {
-    width: 25rem;
+    width: 22rem;
 }
 
 @media (min-width: 648px) {
@@ -53,6 +55,7 @@
     .container-text {
         display: flex;
         margin-left: 1rem;
+        text-align: left;
     }
     .container-text  h1 {
         font-size: 3.2rem;
@@ -61,5 +64,9 @@
     .img-section img {
         width: 40rem;
         margin: 0 auto;
+    }
+    .informative-title div:nth-child(2) {
+        display: flex;
+        margin: 0 0 0 1rem;
     }
 }

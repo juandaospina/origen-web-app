@@ -1,8 +1,14 @@
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
+
 import ImgSecurity from '../../assets/img/security.png';
+import { useAuth } from '../../context/authContext';
 import './Login.css';
 
 export const Login = () => {
+
+    const { login } = useAuth();
+    const navigate = useNavigate();
 
     const { 
         register,
@@ -10,8 +16,18 @@ export const Login = () => {
         formState: { errors }
     } = useForm();
 
-    const onSubmit = (data: any) => {
-        console.log(data);
+    
+    const handleLogin = async (data: any) => {
+        // console.log(data);
+        try {
+            // función debe ser asíncrona
+            // manejar los estados de error con (error.code)
+            await login( data.email, data.password );
+            navigate('/account')
+        } catch (error) {
+            console.log(error)
+            // setErrorAuth("Error de autenticación")
+        }
     }
 
     return(
@@ -30,7 +46,7 @@ export const Login = () => {
                     </p>
                 </div>
 
-                <form onSubmit={ handleSubmit( onSubmit ) }>
+                <form onSubmit={ handleSubmit( handleLogin ) }>
 
                     <div className="form-inputs">
                         <label htmlFor="">Correo Electrónico</label>
