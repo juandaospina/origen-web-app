@@ -18,10 +18,10 @@ export const HomeHero = () => {
 
                 <div>
                     <ButtonGeneral
-                        text="Solicitar recogida "
+                        text="Solicitar recogida →"
                         route="/recoleccion"
-                        background="#00ffcb"
-                        border="#00ffcb"
+                        background="#76D7C4"
+                        border="#76D7C4"
                         textColor="#FFFFFF"
                     />
                 </div>

@@ -56,10 +56,10 @@ export const Navbar = () => {
                             />
 
                             <ButtonGeneral 
-                                text="Registrarme"
+                                text="Registrarme →"
                                 route="/create-account"
-                                background="#00ffcb"
-                                border="#00ffcb"
+                                background="#48C9B0"
+                                border="#48C9B0"
                                 textColor="#FFFFFF"
                             />
                         </div>

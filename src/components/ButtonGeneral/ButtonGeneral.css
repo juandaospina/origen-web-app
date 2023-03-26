@@ -1,7 +1,11 @@
 .button-general {
-    min-width: 10rem;
-    height: 3rem;
-    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 8rem;
+    height: 2rem;
+    padding: 1.1rem;
+    border-radius: 0.6rem;
     cursor: pointer;
 }
 

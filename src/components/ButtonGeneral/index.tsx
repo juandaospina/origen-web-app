@@ -16,7 +16,7 @@ export const ButtonGeneral = (props: Props) => {
         <>
             <button className="button-general" style={{
                 background: background,
-                border: `2px solid ${border}`
+                border: `1px solid ${border}`
             }}>
                 <a style={{
                     color: textColor
